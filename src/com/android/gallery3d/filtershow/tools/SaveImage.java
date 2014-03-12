@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 The Android Open Source Project
+ * Copyright (C) 2010-2020 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -700,7 +700,7 @@ public class SaveImage {
         values.put(Images.Media.TITLE, file.getName());
         values.put(Images.Media.DISPLAY_NAME, file.getName());
         values.put(Images.Media.MIME_TYPE, "image/jpeg");
-        values.put(Images.Media.DATE_TAKEN, time);
+        values.put(Images.Media.DATE_TAKEN, time * 1000);
         values.put(Images.Media.DATE_MODIFIED, time);
         values.put(Images.Media.DATE_ADDED, time);
         values.put(Images.Media.ORIENTATION, 0);
